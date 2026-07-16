@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immersive Dynamic Image Gallery </title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Header section -->
+        <header>
+            <h1>Dynamic Image Gallery</h1>
+            <p>
+                Explore Beautiful Images from Nature,
+                Architecture and Technology.
+            </p>
+        </header>
+
+        <!-- Search box -->
+        <section class="search-section">
+            <input type="text" id="searchInput" placeholder="Search Images...">
+        </section>
+
+        <!-- Category Buttons -->
+        <section class="filter-buttons">
+            <button class="active" data-category="All">All</button>
+
+            <button data-category="Nature">Nature</button>
+
+            <button data-category="Architecture">Architecture</button>
+
+            <button data-category="Tech">Tech</button>
+        </section>
+
+        <!-- Gallery -->
+
+        <section id="gallery" class="gallery">
+
+        </section>
+
+        <!-- Lightbox -->
+        <div class="lightbox" id="lightbox">
+            <span class="close" id="closeBtn">
+                &times;
+            </span>
+
+            <img id="lightboxImage" src="" alt="Gallery Image">
+            <h2 id="imageTitle"></h2>
+            <div class="navigation">
+                <button id="prevBtn">Previous</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+
+        <!-- footer -->
+    </div>
+    <footer>
+        <p>&copy; 2026 Dynamic Image Gallery | Designed by <span>Kaleri Khan</span></p>
+    </footer>
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>

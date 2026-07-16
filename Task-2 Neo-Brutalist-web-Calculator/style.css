@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    min-height: 100vh;
+    color: white;
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 470px;
+    background: rgba(30, 41, 59, .95);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .45);
+    border: 1 px solid rgba(255, 255, 255, .08);
+    animation: fadeIn .7s ease;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #94A3B8;
+    font-size: 15px;
+}
+
+.top-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#themeToggle {
+    flex: 1;
+    background: #3B82F6;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#calculatorMode {
+    flex: 1;
+    background: #334155;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#calculatorMode:focus {
+    outline: none;
+    box-shadow: 0 0 15px #3B82F6;
+}
+
+#themeToggle:hover,
+#calculatorMode:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, .4);
+}
+
+.display {
+    background: #0F172A;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+#history {
+    text-align: right;
+    color: #94A3B8;
+    font-size: 18px;
+    min-height: 25px;
+}
+
+#screen {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 10px;
+    color: white;
+    word-wrap: break-word;
+    transition: .3s ease;
+
+}
+
+#copyBtn {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #3B82F6;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: .3s;
+
+}
+
+#copyBtn:hover {
+    background: #2563EB;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.buttons button {
+    height: 70px;
+    border: none;
+    border-radius: 18px;
+    background: #334155;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s ease;
+    user-select: none;
+}
+
+.buttons button:hover {
+    background: #475569;
+    transform: translateY(-5px);
+}
+
+.buttons button:active {
+    transform: scale(.95);
+}
+
+.operator {
+    background: linear-gradient(135deg, #3B82F6, #2563EB) !important;
+}
+
+.equal {
+    background: linear-gradient(135deg, #10B981, #059669) !important;
+}
+
+#binaryBtn {
+    background: linear-gradient(135deg, #8B5CF6, #7C3AED) !important;
+    color: white;
+}
+
+.programmer-panel {
+    margin-top: 30px;
+}
+
+.programmer-panel h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.conversion {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #111827;
+    border-radius: 18px;
+    padding: 18px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, .35);
+}
+
+.card h3 {
+    color: #94A3B8;
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    padding-top: 20px;
+}
+
+footer h3 {
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #94A3B8;
+    margin: 6px 0;
+}
+
+footer span {
+    color: #3B82F6;
+    cursor: pointer;
+    transition: .3s;
+}
+
+footer span:hover {
+    color: #60A5FA;
+}
+
+@media(max-width:500px) {
+    .calculator {
+        padding: 20px;
+    }
+
+    .buttons button {
+        height: 60px;
+        font-size: 18px;
+    }
+
+    #screen {
+        font-size: 2.2rem;
+    }
+
+    .top-controls {
+        flex-direction: column;
+    }
+
+    .conversion {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
