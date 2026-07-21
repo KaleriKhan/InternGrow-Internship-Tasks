@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kaleri Khan | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    Kaleri Khan
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hello, I'm</h1>
+                <h2>Kaleri Khan</h2>
+                <h3>Front-End Developer</h3>
+                <p>I create modern, responsive and user-friendly websites using HTML, CSS, JavaScript and React.</p>
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn">
+                        Hire Me
+                    </a>
+
+                    <a href="resume.pdf" class="btn secondary" download>
+                        <i class="fas fa-file-download"></i>
+                        Download Resume
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.png" alt="Profile">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <h2 class="section-title">
+                About Me
+            </h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/profile.png" alt="About">
+                </div>
+
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Front-End Developer who enjoys building
+                        modern, responsive and interactive web applications.
+                    </p>
+                    <p>
+                        My goal is to become a professional Full Stack Developer
+                        and create high-quality digital experiences.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">
+                My Skills
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-react"></i>
+                    <h3>React</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-brands fa-bootstrap"></i>
+                    <h3>Bootstrap</h3>
+                </div>
+
+                <div class="skill-card">
+                    <i class="fa-solid fa-wind"></i>
+                    <h3>Tailwind CSS</h3>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section  -->
+        <section id="projects" class="projects">
+            <h2 class="section-title">
+                Featured Projects
+            </h2>
+            <div id="projectContainer" class="projects-grid">
+                <!-- Projects loaded using JSON -->
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume">
+            <h2 class="section-title">
+                Resume
+            </h2>
+
+            <div class="resume-content">
+                <div class="resume-item">
+                    <h3>Education</h3>
+                    <p>Matric</p>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Internship</h3>
+                    <p>Front-End Developer - InternGrow</p>
+                </div>
+
+                <div class="resume-item">
+                    <h3>Goal</h3>
+                    <p>Become a Full Stack Developer</p>
+                </div>
+
+                <a href="resume.pdf" class="resume-btn" download>
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <input type="text" id="subject" placeholder="Subject" required>
+
+                <textarea id="message" rows="6" placeholder="Write your message..."></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+
+            <!-- GitHub -->
+            <a href="https://github.com/KaleriKhan" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <!-- Gmail -->
+            <a href="mailto:balochfahad636@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p>&copy; 2026 Kaleri Khan | All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

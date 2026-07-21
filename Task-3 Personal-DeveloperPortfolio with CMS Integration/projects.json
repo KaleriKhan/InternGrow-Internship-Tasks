@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Immersive Dynamic Image Gallery",
+        "description": "Responsive image gallery with live search, category filtering, hover effects, and modal lightbox built using HTML, CSS and JavaScript.",
+        "image": "images/project1.jfif",
+        "github": "https://github.com/KaleriKhan/InternGrow-Internship-Tasks",
+        "live": "#"
+    },
+    {
+        "title": "Neo Brutalist Web Calculator",
+        "description": "Advanced calculator with dark mode, programmer mode, binary, decimal and hexadecimal conversion using Vanilla JavaScript.",
+        "image": "images/project2.jfif",
+        "github": "https://github.com/KaleriKhan/InternGrow-Internship-Tasks",
+        "live": "#"
+    },
+    {
+        "title": "Developer Portfolio",
+        "description": "Modern developer portfolio with JSON integration and EmailJS contact form.",
+        "image": "images/project3.jfif",
+        "github": "https://github.com/KaleriKhan/InternGrow-Internship-Tasks",
+        "live": "#"
+    },
+    {
+        "title": "Responsive Landing Page",
+        "description": "Professional landing page with responsive layout and modern UI design.",
+        "image": "images/project4.jfif",
+        "github": "#",
+        "live": "#"
+    },
+    {
+        "title": "Dashboard UI",
+        "description": "Modern admin dashboard with responsive cards and interactive components.",
+        "image": "images/project5.jfif",
+        "github":"#",
+        "live": "#"
+    },
+    {
+        "title": "E-Commerce Website",
+        "description": "Responsive online shopping website with product cards and attractive user interface.",
+        "image": "images/project6.jfif",
+        "github": "#",
+        "live": "#"
+    }
+]
